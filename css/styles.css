@@ -1,0 +1,156 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Relaway', sans-serif;
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --hover-color: #404bbf;
+  --hover-active: #404bbf;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-style: normal;
+}
+
+p {
+  line-height: calc(24px / 16px);
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(21px / 18px);
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: #4d5ae5;
+}
+
+.navigate {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24px / 16px);
+  letter-spacing: 0.02em;
+}
+
+.navigate li a:hover,
+address li a:hover {
+  color: var(--hover-color);
+}
+
+.navigate li a:active {
+  color: var(--hover-active);
+  text-decoration: underline;
+}
+
+.address li a {
+  line-height: calc(24px / 16px);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.hero-section {
+  background-color: #2e2f42;
+  color: var(--white-color);
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: calc(60px / 56px);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.button-primary {
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  line-height: calc(24px / 16px);
+  letter-spacing: 0.04em;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: var(--white-color);
+}
+
+.button-primary:hover {
+  background-color: var(--hover-color);
+}
+
+.services-title {
+  display: none;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24px / 20px);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.services-list p {
+  color: #434455;
+}
+
+.team-section {
+  background-color: #f4f4fd;
+}
+
+.user-card {
+  background-color: vae(--white-color);
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.user-card h3,
+.portfolio-card h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24px / 20px);
+  letter-spacing: 0.02em;
+}
+
+.user-card p,
+.portfolio-card p {
+  color: #434455;
+  line-height: calc(24px / 16px);
+  letter-spacing: 0.02em;
+}
+
+.portfolio-card {
+  background-color: var(--white-color);
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
+}
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.logo-white {
+  color: var(--white-color);
+}
