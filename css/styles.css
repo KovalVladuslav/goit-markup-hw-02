@@ -68,7 +68,7 @@ ul {
   line-height: 1.5;
 }
 
-.address:focus {
+.address-link:focus {
   color: #404bbf;
 }
 
@@ -124,9 +124,9 @@ ul {
   background-color: var(--hover-color);
 }
 
-.services-title {
+/* .services-title {
   display: none;
-}
+} */
 
 .sub-title {
   font-size: 36px;
