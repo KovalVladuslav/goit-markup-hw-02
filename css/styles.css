@@ -106,7 +106,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  line-height: calc(24px / 16px);
   letter-spacing: 0.04em;
   text-align: center;
   outline: none;
@@ -123,10 +122,6 @@ ul {
 .button-primary:hover {
   background-color: var(--hover-color);
 }
-
-/* .services-title {
-  display: none;
-} */
 
 .sub-title {
   font-size: 36px;
@@ -162,7 +157,6 @@ ul {
 .portfolio-card-text {
   font-size: 16px;
   line-height: 1.5;
-  line-height: calc(24px / 16px);
   letter-spacing: 0.02em;
 }
 
