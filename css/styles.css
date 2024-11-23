@@ -1,8 +1,8 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Relaway', sans-serif;
-  --primary-text-color: #2e2f42;
-  --secondary-text-color: #434455;
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
   --hover-color: #404bbf;
   --hover-active: #404bbf;
   --white-color: #ffffff;
@@ -11,6 +11,7 @@
 body {
   font-family: var(--primary-font);
   color: var(--primary-text-color);
+  background-color: var(--white-color);
 }
 
 a {
@@ -20,8 +21,9 @@ a {
 }
 
 p {
-  line-height: calc(24px / 16px);
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 ul {
@@ -30,26 +32,44 @@ ul {
 
 .logo {
   text-transform: uppercase;
-  font-family: var(--secondary-font);
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  line-height: calc(21px / 18px);
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  color: #4d5ae5;
 }
 
-.logo-blue {
-  color: #4d5ae5;
+.logo-color {
+  color: #2e2f42;
+}
+
+.logo-color-white {
+  color: #f4f4fd;
 }
 
 .navigate {
   font-size: 16px;
   font-weight: 500;
-  line-height: calc(24px / 16px);
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
+.navigate-link:focus {
+  color: #404bbf;
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.address:focus {
+  color: #404bbf;
+}
+
 .navigate li a:hover,
-address li a:hover {
+.address-link:hover {
   color: var(--hover-color);
 }
 
@@ -58,10 +78,10 @@ address li a:hover {
   text-decoration: underline;
 }
 
-.address li a {
+.address-link {
   line-height: calc(24px / 16px);
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .hero-section {
@@ -72,21 +92,28 @@ address li a:hover {
 .hero-title {
   font-size: 56px;
   font-weight: 700;
-  line-height: calc(60px / 56px);
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
 }
 
 .button-primary {
-  border-radius: 4px;
   background-color: #4d5ae5;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   line-height: calc(24px / 16px);
   letter-spacing: 0.04em;
   text-align: center;
   outline: none;
   border: none;
+  font-family: inherit;
   color: var(--white-color);
+  cursor: pointer;
+}
+
+.button-primary:focus {
+  background-color: #404bbf;
 }
 
 .button-primary:hover {
@@ -98,15 +125,19 @@ address li a:hover {
 }
 
 .sub-title {
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 500;
-  line-height: calc(24px / 20px);
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 
-.services-list p {
-  color: #434455;
+.services-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .team-section {
@@ -115,27 +146,24 @@ address li a:hover {
 
 .user-card {
   background-color: vae(--white-color);
-  border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: 264px;
   height: 380px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   text-align: center;
   background-color: #ffffff;
 }
 
-.user-card h3,
-.portfolio-card h3 {
+.user-card-title,
+.portfolio-card-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: calc(24px / 20px);
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.user-card p,
-.portfolio-card p {
-  color: #434455;
+.user-card-text,
+.portfolio-card-text {
+  font-size: 16px;
+  line-height: 1.5;
   line-height: calc(24px / 16px);
   letter-spacing: 0.02em;
 }
@@ -149,6 +177,11 @@ address li a:hover {
 
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: #f4f4fd;
 }
 
 .logo-white {
