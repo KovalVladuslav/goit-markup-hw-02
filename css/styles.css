@@ -41,7 +41,7 @@ ul {
 }
 
 .logo-color {
-  color: #2e2f42;
+  color: var(--secondary-text-color);
 }
 
 .logo-color-white {
@@ -55,8 +55,12 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.navigate-link {
+  color: var(--secondary-text-color);
+}
+
 .navigate-link:focus {
-  color: #404bbf;
+  color: #404bbf;#404bbf 
 }
 
 .address {
@@ -85,7 +89,7 @@ ul {
 }
 
 .hero-section {
-  background-color: #2e2f42;
+  background-color: var(--secondary-text-color);
   color: var(--white-color);
 }
 
@@ -131,13 +135,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-}
-
-.services-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  color: var(--secondary-text-color)
 }
 
 .team-section {
@@ -146,18 +144,18 @@ ul {
 
 .user-card {
   background-color: vae(--white-color);
-  width: 264px;
-  height: 380px;
   text-align: center;
   background-color: #ffffff;
 }
 
+.services-list-title
 .user-card-title,
 .portfolio-card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color)
 }
 
 .user-card-text,
@@ -171,12 +169,10 @@ ul {
 .portfolio-card {
   background-color: var(--white-color);
   border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px;
 }
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--secondary-text-color);
 }
 
 .footer-text {
