@@ -60,7 +60,7 @@ ul {
 }
 
 .navigate-link:focus {
-  color: #404bbf;#404bbf 
+  color: #404bbf;
 }
 
 .address {
@@ -135,7 +135,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
 }
 
 .team-section {
@@ -148,14 +148,14 @@ ul {
   background-color: #ffffff;
 }
 
-.services-list-title
+.services-list-title,
 .user-card-title,
 .portfolio-card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
 }
 
 .user-card-text,
